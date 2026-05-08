@@ -1,0 +1,14 @@
+<div class="container mt-4" style="background-color: rgb(252, 121, 174); text-align: center; border-radius: 10px;">
+    <h2>EDIT EXPENSE</h2>
+
+    <form method="POST">
+        <input name="amount" value="{{ expense.amount }}" class="form-control mb-2">
+        <input name="category" value="{{ expense.category }}" class="form-control mb-2">
+        <input name="description" value="{{ expense.description }}" class="form-control mb-2">
+        <input name="date" value="{{ expense.date }}" class="form-control mb-2">
+        <button class="btn btn-primary">Update</button>
+        <a href="/dashboard">
+            <button class="btn btn-secondary">Back</button>
+        </a>
+    </form>
+</div>
