@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+<div class="container mt-5" style="background-color: rgb(234, 235, 229); text-align: center;">
+    <h1>Application Post</h1>
+
+    <form method="POST">
+        <input name="title" class="form-control mb-2" placeholder="Job Title" type="text">
+        <input name="company" class="form-control mb-2" placeholder="Company" type="text">
+        <input name="description" class="form-control mb-2" placeholder="Description" type="text">
+        <input name="salary" class="form-control mb-2" placeholder="Salary" type="number" step="0.01">
+        <button class="btn btn-primary">Post Job</button>
+    </form>
+    <a href="/post_page">
+        <button class="btn btn-secondary">Back to Jobs</button>
+    </a>
+
+</div>
